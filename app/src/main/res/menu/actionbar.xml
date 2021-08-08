@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/redposition"
+        android:icon="@drawable/redicon"
+        android:title="Favorite"
+        app:showAsAction="always"
+        android:onClick="onGroupItemClicked"/>
+
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/hearticon"
+        android:title="Favorite"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/smallitem"
+                android:title="Small"
+                android:onClick="onGroupItemClicked"/>
+            <item
+                android:id="@+id/middleitem"
+                android:title="Middle"
+                android:onClick="onGroupItemClicked"/>
+            <item
+                android:id="@+id/bigitem"
+                android:title="Big"
+                android:onClick="onGroupItemClicked"/>
+        </menu>
+    </item>
+</menu>
